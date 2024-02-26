@@ -11,7 +11,7 @@ const NavBar = ({ homeBool, dataToDisplay }) => {
     return (
         <div className='d-flex justify-content-between'>
             <div className='row align-items-center'>
-                <img style={{width:'10rem', height:'8rem'}} src="/src/assets/restaurant.jpg" alt="logo" />
+                <img style={{width:'10rem', height:'8rem'}} src="/assets/restaurant.jpg" alt="logo" />
                 <h1 className='col-6'>{dataToDisplay ? dataToDisplay : "Restaurant Wrangler Supreme Deluxe"}</h1>
             </div>
             <div className='d-flex flex-column align-items-end text-end'>
