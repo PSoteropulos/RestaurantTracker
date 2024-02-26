@@ -10,8 +10,9 @@ const NavBar = ({ homeBool, dataToDisplay }) => {
 
     return (
         <div className='d-flex justify-content-between'>
-            <div>
-                <h3>{dataToDisplay ? dataToDisplay : "Restaurant Wrangler Deluxe v1.0"}</h3>
+            <div className='row align-items-center'>
+                <img style={{width:'10rem', height:'8rem'}} src="/src/assets/restaurant.jpg" alt="logo" />
+                <h1 className='col-6'>{dataToDisplay ? dataToDisplay : "Restaurant Wrangler Supreme Deluxe"}</h1>
             </div>
             <div className='d-flex flex-column align-items-end text-end'>
                 {!homeBool && <Link to={"/"}><button className='btn btn-dark m-1'>Home</button></Link>}
