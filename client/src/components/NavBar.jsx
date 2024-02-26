@@ -16,7 +16,7 @@ const NavBar = ({ homeBool, dataToDisplay }) => {
             <div className='d-flex flex-column align-items-end text-end'>
                 {!homeBool && <Link to={"/"}><button className='btn btn-dark m-1'>Home</button></Link>}
                 <h5 className='col-8'>
-                    {mostRecent.name && `${mostRecent.name} added at ${format((new Date(mostRecent.createdAt)), "h:mm a 'on' EEEE")}!`}
+                    {mostRecent?.name && `${mostRecent.name} added at ${format((new Date(mostRecent.createdAt)), "h:mm a 'on' EEEE")}!`}
                 </h5>
             </div>
         </div>
